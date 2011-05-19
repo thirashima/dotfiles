@@ -1,0 +1,30 @@
+[user]
+	name = "Tom Hirashima"
+	email = ""
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[alias]
+	ci = commit -a
+	co = checkout
+	st = status 
+	up = pull --rebase
+	amend = commit --amend
+	export = bundle create /Users/tomhirashima/web.bundle --all
+[push]
+	default = current
+[core]
+	excludesfile = /Users/tomhirashima/.gitignore
+	editor = joe
+[instaweb]
+	local = true
+	httpd = lighttpd
+	port  = 4321
+[mergetool "p4merge"]
+	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	keepBackup = false
+[merge]
+	tool = p4merge
