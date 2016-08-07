@@ -34,3 +34,5 @@
 	keepBackup = false
 [merge]
 	tool = sourcetree
+[url "git@github.com:"]
+	insteadOf = https://github.com/
